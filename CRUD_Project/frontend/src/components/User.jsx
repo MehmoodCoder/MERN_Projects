@@ -58,12 +58,14 @@ function User() {
                   </td>
                   <td>
                     <div className="d-flex justify-content-center gap-1">
-                      <button
-                        className="btn btn-outline-warning btn-sm"
-                        title="Edit"
-                      >
-                        ⚙️
-                      </button>
+                      <Link to="/update">
+                        <button
+                          className="btn btn-outline-warning btn-sm"
+                          title="Edit"
+                        >
+                          ⚙️
+                        </button>
+                      </Link>
                       <button
                         className="btn btn-outline-danger btn-sm"
                         title="Delete"
