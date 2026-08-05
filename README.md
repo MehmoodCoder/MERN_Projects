@@ -154,6 +154,7 @@ npm i express
 npm i mongoose
 npm i nodemon
 npm i cors
+npm i dotenv
 ```
 
 **It automatically Create package.json if not exists. Like**
@@ -183,6 +184,7 @@ npm i cors
   },
   "dependencies": {
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.9.1",
     "nodemon": "^3.1.14"
