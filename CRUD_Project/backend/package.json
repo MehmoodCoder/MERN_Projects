@@ -1,0 +1,19 @@
+{
+  "name": "crud_project",
+  "version": "1.0.0",
+  "description": "A backend of CRUD Project",
+  "keywords": [
+    "crud"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "github.com/MehmoodCoder/MERN_Projects"
+  },
+  "license": "MIT",
+  "author": "MehmoodCoder",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
