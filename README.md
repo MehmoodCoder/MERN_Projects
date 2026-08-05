@@ -153,6 +153,7 @@ Run this command inside your project directory to install npm pakages in pakages
 npm i express
 npm i mongoose
 npm i nodemon
+npm i cors
 ```
 
 **It automatically Create package.json if not exists. Like**
@@ -181,9 +182,10 @@ npm i nodemon
     "start": "nodemon app.js"
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1",
-    "mongoose": "^9.8.0",
-    "nodemon": "^3.1.14",
+    "mongoose": "^9.9.1",
+    "nodemon": "^3.1.14"
   }
 }
 
