@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Router, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import User from './components/User';
 import CreateUser from './components/CreateUser';
@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Router>
+        <Routes>
           <Route path='/' element={<User/>}/>
           <Route path='/create' element={<CreateUser/>}/>
           <Route path='/update' element={<UpdateUser/>}/>
-        </Router>
+        </Routes>
       </BrowserRouter>
     </>
   )
