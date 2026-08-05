@@ -58,3 +58,11 @@ npm run dev
 - Basic knowledge of React and JavaScript
 
 ---
+
+## 📚 Learning Resources
+
+- [React Documentation](https://react.dev)
+- [Vite Guide](https://vitejs.dev)
+- [Bootstrap Documentation](https://getbootstrap.com)
+- [W3Schools All Language Tutorials](https://www.w3schools.com) — *(Comprehensive tutorials & references for JavaScript, BootStrap, CSS, Node, React, and more)*
+---
