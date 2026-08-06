@@ -6,7 +6,6 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import connectDB from "./connection.js";
-import UserModel from "./models/user.js";
 
 app.use(async (req, res, next) => {
   try {
