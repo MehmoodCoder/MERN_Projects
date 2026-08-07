@@ -147,7 +147,7 @@ To enable modern ES6 `import/export` syntax instead of `require()`, open `packag
 
 ```
 
-## 4. Installing Core Dependencies
+## 4. Installing Core Dependencies for MERN Stack Backend
 Run this command inside your project directory to install npm pakages in pakages.json file:
 ```bash
 npm i express
