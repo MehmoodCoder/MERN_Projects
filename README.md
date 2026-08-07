@@ -62,6 +62,55 @@ A complete full-stack web application designed to manage user records in real-ti
 
 ---
 
+## 🌐 Deployment & Environment Setup
+
+### 1. MongoDB Atlas Configuration
+ Before deploying, ensure your database access is open to Vercel:
+1. Go to [MongoDB Atlas](https://cloud.mongodb.com/).
+2. Navigate to **Network Access** under Security.
+3. Click **Add IP Address** and select **Allow Access from Anywhere** (`0.0.0.0/0`).
+4. Save changes.
+
+---
+
+### 2. Environment Variables on Vercel
+Set up your environment variables in Vercel before or after deployment:
+1. In your Vercel Project Dashboard, go to **Settings ➔ Environment Variables**.
+2. Add your environment key-value pairs (e.g., `MONGO_URL`, `JWT_SECRET`, `PORT`).
+3. ⚠️ **Important Requirement:** 
+   * Ensure **Production**, **Preview**, and **Development** targets are **ALL CHECKED**.
+   * **DO NOT toggle on the "Sensitive" option** for `MONGO_URL` to prevent variable save/sync issues.
+
+---
+
+### 3. Deploy to Vercel
+
+1. Push your latest code to GitHub.
+2. Go to [vercel.com](https://vercel.com) and log in.
+3. Click **"New Project"**.
+4. Connect your GitHub repository.
+5. Select/Connect the exact project root folder containing `package.json` (to avoid nested directory deployment issues).
+6. Configure Build Settings:
+   * Vercel automatically detects Vite/Node settings.
+   * Toggle the **"Build Command"** switch and manually type `npm run build` to override it (if using a build step).
+7. Ensure all Environment Variables (`MONGO_URL`, etc.) are added under the project settings.
+8. Click **"Deploy"**.
+
+> 💡 **Note:** If you edit or update any Environment Variable after deploying, always go to the **Deployments** tab, click the three dots (`...`) on the latest deployment, and select **Redeploy** to apply changes! & ***Make sure your project structure strictly follows the root layout:***
+
+```bash
+Project_Folder/
+├── models/
+├── routes/
+├── middlewares/
+├── .env
+├── app.js
+├── connection.js
+└── package.json
+```
+
+---
+
 # 📦 MERN Stack: Frontend Architecture Setup Guide
 
 This documentation provides a step-by-step guide to setting up a production-ready **Frontend Workspace** for a MERN stack application using **React + Vite**. It covers project initialization, dependency configuration, and local setup—preparing the UI layer to seamlessly connect with an Express/Node.js backend.
