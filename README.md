@@ -101,13 +101,9 @@ Set up your environment variables in Vercel before or after deployment:
 
 ```bash
 Project_Folder/
-├── models/
-├── routes/
-├── middlewares/
-├── .env
-├── app.js
-├── connection.js
-└── package.json
+├── backend/
+├── frontend/
+└── vercel.json
 ```
 
 ---
