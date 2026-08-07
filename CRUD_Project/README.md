@@ -38,6 +38,27 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application desig
 
 ---
 
+## 🛠️ Tech Stack & Dependencies
+
+| Tool / Library | Type | Purpose |
+| :--- | :--- | :--- |
+| **Node.js** | Runtime | Server-side JavaScript execution environment |
+| **Express.js** | Backend Framework | Web framework for handling RESTful API routes & HTTP requests |
+| **React.js** | Frontend Library | Declarative UI library for building component-based client views |
+| **MongoDB Atlas** | Database | Cloud-hosted NoSQL document database for user data storage |
+| **Mongoose** | Backend ODM | Schema-based data modeling and async queries for MongoDB |
+| **Axios** | Frontend HTTP Client | Promise-based client for sending HTTP requests to backend endpoints |
+| **React Router DOM** | Client Routing | Declarative routing for single-page dynamic view navigation |
+| **Bootstrap 5** | Frontend Styling | Responsive component layout, tables, forms, and dark-theme views |
+| **Vite** | Frontend Tooling | High-performance build tool and hot-reloading dev server |
+| **Nodemon** | Dev Dependency | Automatically restarts Node app when server-side file changes occur |
+| **dotenv** | Utility | Loads environment variables from `.env` file into `process.env` |
+| **CORS** | Backend Middleware | Enables cross-origin resource sharing between React and Express |
+| **Vercel** | Hosting / Serverless | Platform for deploying frontend SPA and serverless backend API functions |
+| **Postman** | API Client | Manual testing tool for REST endpoints (`GET`, `POST`, `PUT`, `DELETE`) |
+
+---
+
 ## 📂 Project Directory Structure
 
 **Generated:** 8/7/2026, 10:11:07 PM
