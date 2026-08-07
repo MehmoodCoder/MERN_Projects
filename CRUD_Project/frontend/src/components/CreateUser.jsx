@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function CreateUser() {
   const [name, setName] = useState("");
@@ -10,8 +11,17 @@ function CreateUser() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ id: Date.now(), name, email, age });
-    navigate("/");
+    axios
+      .post("http://localhost:3000/create", {
+        name,
+        email,
+        age,
+      })
+      .then((result) => {
+        console.log(result);
+        navigate("/");
+      })
+      .catch((e) => console.log("Error : ", e));
   };
 
   return (
