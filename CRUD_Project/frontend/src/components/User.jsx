@@ -59,7 +59,7 @@ function User() {
                   </td>
                   <td>
                     <div className="d-flex justify-content-center gap-1">
-                      <Link to="/update">
+                      <Link to={`/update/${user._id}`}>
                         <button
                           className="btn btn-outline-warning btn-sm"
                           title="Edit"
