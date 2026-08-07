@@ -11,8 +11,10 @@ function CreateUser() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // ❌ Pehle: axios.post("http://localhost:3000/create", ...)
+    // ✅ Updated: Relative path with /api
     axios
-      .post("http://localhost:3000/create", {
+      .post("/api/create", {
         name,
         email,
         age,
