@@ -44,6 +44,21 @@ A complete full-stack web application designed to manage user records in real-ti
 
 ---
 
+## ✨ Features
+
+- 🏛️ **Monorepo / Multi-Project Ecosystem** – Centralized repository housing scalable MERN modules, CRUD applications, and expanding backend services.
+- 🏗️ **Full-Stack MERN Architecture** – End-to-end integration connecting decoupled React single-page applications with Node.js & Express RESTful APIs.
+- ⚡ **Axios API Integration** – Asynchronous client-side HTTP request handling utilizing normalized paths for real-time frontend-backend communication.
+- 🔄 **Real-Time CRUD Operations** – Instant UI updates and client state re-rendering on User Creation, Retrieval, Updates, and Deletions.
+- 🗄️ **MongoDB & Mongoose Schema Design** – Structured document schemas, explicit data validation, and persistent cloud data management via MongoDB Atlas.
+- 🌐 **Dynamic Client-Side Routing** – Multi-view navigation and parameter matching managed via React Router DOM.
+- 🎨 **Responsive UI Layer** – Dynamic dark-themed views, adaptive table layouts, and interactive forms styled with Bootstrap 5.
+- 🚀 **Production-Ready Serverless Deployment** – Cloud deployment configurations utilizing custom `vercel.json` rewrites and serverless function entry points.
+- ⚙️ **Centralized Environment Vault** – Secure handling of environment configurations (`MONGO_URL`, `PORT`) via `.env` integration across modules.
+- ⚡ **Optimized Developer Workflow** – Rapid frontend development powered by Vite combined with backend hot-reloading tooling.
+
+---
+
 ## 📂 Project Directory Structure
 
 
