@@ -9,10 +9,11 @@ From fundamental CRUD operations to advanced real-time applications, this space 
 
 ## 🛠️ Key Technologies & Core Concepts
 
-- **Frontend Architecture:** Modern UI components built with **React**, featuring dynamic state management, client-side routing, and responsive designs using CSS frameworks like **Bootstrap**.
-- **Backend Infrastructure:** RESTful APIs engineered with **Node.js** and **Express.js**, incorporating secure authentication, request handling, and robust data routing.
-- **Database & Storage:** Scalable document storage and schema design managed via **MongoDB** and **Mongoose ORM**.
-- **DevOps & Deployments:** Environment configuration, production builds, and continuous deployment workflows across cloud environments.
+- **Frontend Architecture:** Built with **React** (`useState`, `useEffect`), utilizing **Axios** for async HTTP calls (`GET`, `POST`, `PUT`, `DELETE`), **`react-router-dom`** for dynamic routing (`useParams`, `useNavigate`), and **Bootstrap** for responsive styling.
+- **Backend Infrastructure:** Modular RESTful APIs engineered with **Node.js** & **Express.js**, structured using Express Routers, custom middlewares, and controller logic.
+- **Database Persistence:** Scalable document modeling via **MongoDB** & **Mongoose**, implementing queries like `findById`, `findByIdAndUpdate`, and `findByIdAndDelete`.
+- **Full-Stack REST Architecture:** Seamless integration between React frontend and Express backend with cross-origin communication handled via **CORS**.
+- **DevOps & Environment Setup:** Secure configuration using **`dotenv`** environment variables, clean project architecture, and production-ready code structure.
 
 ---
 
@@ -23,8 +24,6 @@ This workspace continuously expands to include diverse full-stack solutions and 
 - ⚙️ **CRUD Systems:** Complete Create, Read, Update, and Delete data operations.
 - 📊 **State & Data Management:** Optimized state persistence and API data fetching.
 - 🎨 **Responsive UI/UX:** Clean, accessible layouts designed for desktop, tablet, and mobile views.
-
----
 
 # 📦 MERN Stack: Frontend Architecture Setup Guide
 
