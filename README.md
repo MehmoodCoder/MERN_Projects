@@ -25,6 +25,25 @@ This workspace continuously expands to include diverse full-stack solutions and 
 - 📊 **State & Data Management:** Optimized state persistence and API data fetching.
 - 🎨 **Responsive UI/UX:** Clean, accessible layouts designed for desktop, tablet, and mobile views.
 
+---
+
+## 💻 Projects Included
+
+### 👥 MERN CRUD User Management System
+> **Main Folder:** `CRUD_Projects/`
+>> **Folders:** `backend/` (Backend) & `frontend/` (Frontend)
+
+A complete full-stack web application designed to manage user records in real-time with full MongoDB persistence and clean UI updates.
+
+- **Features:** 
+  - Fetch and list all registered users on the home dashboard.
+  - Create new user records using validation-ready forms.
+  - Pre-populate user data for seamless record updating (`PUT` request).
+  - Instant user deletion with direct MongoDB sync (`DELETE` request).
+- **Concepts:** Express Routing, Mongoose Schema/Models, Axios HTTP requests, React Hooks (`useState`, `useEffect`, `useParams`, `useNavigate`), Bootstrap Layouts.
+
+---
+
 # 📦 MERN Stack: Frontend Architecture Setup Guide
 
 This documentation provides a step-by-step guide to setting up a production-ready **Frontend Workspace** for a MERN stack application using **React + Vite**. It covers project initialization, dependency configuration, and local setup—preparing the UI layer to seamlessly connect with an Express/Node.js backend.
