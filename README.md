@@ -31,7 +31,7 @@ This workspace continuously expands to include diverse full-stack solutions and 
 This documentation provides a step-by-step guide to setting up a production-ready **Frontend Workspace** for a MERN stack application using **React + Vite**. It covers project initialization, dependency configuration, and local setup—preparing the UI layer to seamlessly connect with an Express/Node.js backend.
 
 
-## Step 1: Initialize Vite Project
+## 1. Initialize Vite Project
 Run the following command in your terminal:
 ```bash
 npm init vite
@@ -69,6 +69,49 @@ npm i
 # Start the local development server
 npm run dev
 ```
+
+---
+
+## 2. Installing Core Dependencies for MERN Stack Backend
+Run this command inside your project directory to install npm pakages in pakages.json file:
+```bash
+npm i axios
+npm i react-router-dom
+npm i bootstrap
+```
+
+**It automatically Create package.json if not exists. Like**
+
+```json
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.19.0",
+    "bootstrap": "^5.3.8",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "oxlint": "^1.75.0",
+    "vite": "^8.2.0"
+  }
+}
+```
+
+**Note:**  Install packages when needed
 
 ---
 
@@ -123,6 +166,23 @@ Is this OK? (yes)
 
 ---
 
+### 💻 How to Run the backend of the MERN Project Locally  
+
+If you want to pull this project and run it again locally, simply execute these commands:
+
+```bash
+# Navigate to the project folder
+cd Project_dir
+
+# create node_modules folder by running this command  
+npm i
+
+# Start the local development server
+npm start
+```
+
+---
+
 To enable modern ES6 `import/export` syntax instead of `require()`, open `package.json` and add `"type": "module"`:
 ```json
 {
@@ -146,6 +206,8 @@ To enable modern ES6 `import/export` syntax instead of `require()`, open `packag
 }
 
 ```
+
+---
 
 ## 4. Installing Core Dependencies for MERN Stack Backend
 Run this command inside your project directory to install npm pakages in pakages.json file:
