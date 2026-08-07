@@ -53,6 +53,7 @@ A complete full-stack web application designed to manage user records in real-ti
 ```text
 📁 MERN_Projects
 ├── 📂 CRUD_Project
+│   ├── 📄 vercel.json
 │   ├── ⚡ backend
 │   └── 💻 frontend
 ├── 📄 LICENSE
