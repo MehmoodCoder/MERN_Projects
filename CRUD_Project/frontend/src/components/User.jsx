@@ -7,18 +7,18 @@ function User() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000")
+      .get("/api")
       .then((result) => setusers(result.data))
       .catch((e) => console.log("error : ", e));
   }, []);
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:3000/delete/${id}`)
+      .delete(`/api/delete/${id}`)
       .then((res) => {
-        console.log(res.data)
-        window.location.reload()
-  })
+        console.log(res.data);
+        setusers(users.filter((user) => user._id !== id));
+      })
       .catch((err) => console.log("Error : ", err));
   };
 
@@ -80,7 +80,7 @@ function User() {
                       <button
                         className="btn btn-outline-danger btn-sm"
                         title="Delete"
-                        onClick={(e) => handleDelete(user._id)}
+                        onClick={() => handleDelete(user._id)}
                       >
                         🗑️
                       </button>
