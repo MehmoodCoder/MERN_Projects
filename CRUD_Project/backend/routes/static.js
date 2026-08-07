@@ -6,7 +6,7 @@ const router = express.Router()
 
 
 router.get('/', HomeUI)
-router.post('/', CreateNewUser);
+router.post('/create', CreateNewUser);
 router.get('/getuser/:id', GetUser)
 router.put('/update/:id', UpdateUser)
 router.delete('/delete/:id', DeleteUser)
