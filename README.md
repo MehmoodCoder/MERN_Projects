@@ -30,17 +30,18 @@ This workspace continuously expands to include diverse full-stack solutions and 
 ## 💻 Projects Included
 
 ### 👥 MERN CRUD User Management System
-> **Main Folder:** `CRUD_Projects/`
->> **Folders:** `backend/` (Backend) & `frontend/` (Frontend)
+> **Main Folder:** `CRUD_Project/`
+>> **Subfolders:** `backend/` (Node/Express API) & `frontend/` (React SPA)
 
-A complete full-stack web application designed to manage user records in real-time with full MongoDB persistence and clean UI updates.
+A full-stack user management module built on the MERN stack, offering dynamic record operations, MongoDB Atlas persistence, and instant UI state synchronization.
 
-- **Features:** 
-  - Fetch and list all registered users on the home dashboard.
-  - Create new user records using validation-ready forms.
-  - Pre-populate user data for seamless record updating (`PUT` request).
-  - Instant user deletion with direct MongoDB sync (`DELETE` request).
-- **Concepts:** Express Routing, Mongoose Schema/Models, Axios HTTP requests, React Hooks (`useState`, `useEffect`, `useParams`, `useNavigate`), Bootstrap Layouts.
+- **Features:**
+  - Fetch and render all stored user records on the main dashboard (`GET /api`).
+  - Add new user entries via form inputs with built-in validation (`POST /api/create`).
+  - Pre-populate dynamic user data for inline profile modifications (`GET /api/getuser/:id` & `PUT /api/update/:id`).
+  - Delete user entries instantly with direct MongoDB sync and state re-rendering (`DELETE /api/delete/:id`).
+  - Serverless architecture support with configured route rewrites for cloud deployments (`vercel.json`).
+- **Concepts:** Modular Express Routing, Mongoose Schema Modeling, Axios relative paths, React Hooks (`useState`, `useEffect`, `useParams`, `useNavigate`), Client-side Routing (`react-router-dom`), Bootstrap 5 Layouts.
 
 ---
 
