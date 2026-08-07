@@ -24,6 +24,20 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application desig
 
 ---
 
+## ✨ Features
+
+- 🏗️ **Full-Stack MERN Architecture** – Seamless integration connecting a React client to a Node.js & Express REST API server.
+- ⚡ **Axios API Integration** – Clean client-side HTTP requests utilizing relative paths for real-time frontend-backend communication.
+- 🔄 **Real-Time CRUD Operations** – Instant UI updates and state re-rendering on User Creation, Retrieval, Updates, and Deletions.
+- 🗄️ **MongoDB & Mongoose Validation** – Structured database schemas, data validation, and persistent cloud storage using MongoDB Atlas.
+- 🌐 **Dynamic Client-Side Routing** – Multi-page navigation managed via React Router for viewing, adding, and updating users.
+- 🎨 **Responsive UI Layer** – Dynamic, modern dark-themed views and responsive form interfaces styled with Bootstrap 5.
+- 🚀 **Serverless Production Deployment** – Production-ready setup with custom `vercel.json` rewrite rules and serverless function routing.
+- ⚙️ **Centralized Environment Vault** – Secure management of sensitive configurations (`MONGO_URL`, `PORT`) via `.env` integration.
+- ⚡ **Developer Workflow** – Accelerated development loop using Vite on the frontend and hot-reloading tooling on the backend.
+
+---
+
 ## 📂 Project Directory Structure
 
 **Generated:** 8/7/2026, 10:11:07 PM
