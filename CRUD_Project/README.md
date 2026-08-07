@@ -81,6 +81,21 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application desig
 
 ---
 
+## 💡 Core Concepts Covered
+
+- ✅ **MERN Stack Architecture** – Integrating a React SPA frontend with a Node.js & Express RESTful API backend
+- ✅ **RESTful API Design** – Building structured HTTP routes (`GET`, `POST`, `PUT`, `DELETE`) for seamless CRUD handling
+- ✅ **React State & Effect Hooks** – Managing dynamic client-side state (`useState`) and side effects (`useEffect`) for real-time UI sync
+- ✅ **Axios HTTP Client** – Asynchronous API requests, payload handling, and relative URL path configurations
+- ✅ **Client-Side Routing** – Managing view transitions and dynamic parameter routes (`req.params`) using React Router DOM
+- ✅ **MongoDB & Mongoose Modeling** – Designing database schemas, defining constraints, and performing asynchronous query execution
+- ✅ **Express Middleware Pipeline** – Configuring cross-origin resource sharing (`cors`), body parsing (`express.json`), and modular route routing
+- ✅ **Serverless Deployment Architecture** – Routing API traffic and configuring rewrites for cloud platforms via `vercel.json`
+- ✅ **Environment Vault Management** – Securing database credentials (`MONGO_URL`) and server environments with `dotenv`
+- ✅ **Modern Build Tooling** – Leveraging Vite for fast frontend bundle generation and module bundling
+
+---
+
 ## 👤 Author
 
 **MehmoodCoder**
