@@ -1,15 +1,16 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function User() {
-  const [users, setusers] = useState([
-    {
-      id: Date.now(),
-      name: "BABAR",
-      email: "king@blabla.com",
-      age: 32,
-    },
-  ]);
+  const [users, setusers] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000")
+      .then((result) => setusers(result.data))
+      .catch((e) => console.log("error : ", e));
+  }, []);
 
   return (
     <div className="container-fluid min-vh-100 bg-dark text-white d-flex flex-column justify-content-center align-items-center p-2 p-sm-4">
