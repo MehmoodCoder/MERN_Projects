@@ -12,6 +12,16 @@ function User() {
       .catch((e) => console.log("error : ", e));
   }, []);
 
+  const handleDelete = (id) => {
+    axios
+      .delete(`http://localhost:3000/delete/${id}`)
+      .then((res) => {
+        console.log(res.data)
+        window.location.reload()
+  })
+      .catch((err) => console.log("Error : ", err));
+  };
+
   return (
     <div className="container-fluid min-vh-100 bg-dark text-white d-flex flex-column justify-content-center align-items-center p-2 p-sm-4">
       <div
@@ -47,7 +57,7 @@ function User() {
                     className="fw-semibold text-light text-truncate"
                     style={{ maxWidth: "100px" }}
                   >
-                     &nbsp; {user.name}
+                    &nbsp; {user.name}
                   </td>
                   <td className="text-info-emphasis text-break">
                     {user.email}
@@ -70,6 +80,7 @@ function User() {
                       <button
                         className="btn btn-outline-danger btn-sm"
                         title="Delete"
+                        onClick={(e) => handleDelete(user._id)}
                       >
                         🗑️
                       </button>
