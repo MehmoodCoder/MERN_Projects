@@ -32,7 +32,7 @@ function User() {
           <table className="table table-dark table-hover table-sm align-middle mb-0 style-table">
             <thead className="table-active text-uppercase small text-muted">
               <tr>
-                <th style={{ width: "25%" }}>Name</th>
+                <th style={{ width: "25%" }}> &nbsp; Name</th>
                 <th style={{ width: "40%" }}>Email</th>
                 <th style={{ width: "15%" }}>Age</th>
                 <th style={{ width: "20%" }} className="text-center">
@@ -42,12 +42,12 @@ function User() {
             </thead>
             <tbody>
               {users.map((user) => (
-                <tr key={user.id}>
+                <tr key={user._id}>
                   <td
                     className="fw-semibold text-light text-truncate"
                     style={{ maxWidth: "100px" }}
                   >
-                    {user.name}
+                     &nbsp; {user.name}
                   </td>
                   <td className="text-info-emphasis text-break">
                     {user.email}
