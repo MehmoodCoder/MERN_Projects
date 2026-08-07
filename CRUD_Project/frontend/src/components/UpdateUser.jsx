@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import axios from "axios";
 
 function UpdateUser() {
   const { id } = useParams();
@@ -9,10 +10,26 @@ function UpdateUser() {
   const [email, setEmail] = useState("");
   const [age, setAge] = useState("");
 
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3000/getuser/${id}`)
+      .then((result) => {
+        setName(result.data.name);
+        setEmail(result.data.email);
+        setAge(result.data.age);
+      })
+      .catch((e) => console.log("Error fetching user: ", e));
+  }, [id]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ id, name, email, age });
-    navigate("/");
+    axios
+      .put(`http://localhost:3000/update/${id}`, { name, email, age })
+      .then((result) => {
+        console.log(result);
+        navigate("/");
+      })
+      .catch((e) => console.log("Error updating user: ", e));
   };
 
   return (
