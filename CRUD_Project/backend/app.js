@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import StaticURLRoute from "./routes/static.js";
-import UserRoute from "./routes/user.js";
 import ConnectDB from "./connection.js";
 
 dotenv.config();
@@ -22,7 +21,6 @@ ConnectDB(process.env.MONGO_URL)
   });
 
 app.use("/api", StaticURLRoute);
-app.use("/api/create", UserRoute);
 
 if (process.env.NODE_ENV !== "production") {
   app.listen(PORT, () => {
