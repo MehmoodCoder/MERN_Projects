@@ -12,7 +12,7 @@ function UpdateUser() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/getuser/${id}`)
+      .get(`/api/getuser/${id}`)
       .then((result) => {
         setName(result.data.name);
         setEmail(result.data.email);
@@ -24,7 +24,7 @@ function UpdateUser() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .put(`http://localhost:3000/update/${id}`, { name, email, age })
+      .put(`/api/update/${id}`, { name, email, age })
       .then((result) => {
         console.log(result);
         navigate("/");
