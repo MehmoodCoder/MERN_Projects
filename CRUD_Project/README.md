@@ -24,6 +24,49 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application desig
 
 ---
 
+## 📂 Project Directory Structure
+
+**Generated:** 8/7/2026, 10:11:07 PM
+**Root Path:** `workspace\MERN_Projects`
+
+```
+├── 📁 CRUD_Project
+│   ├── 📁 backend
+│   │   ├── 📁 controllers
+│   │   │   └── 📄 static.js
+│   │   ├── 📁 models
+│   │   │   └── 📄 user.js
+│   │   ├── 📁 routes
+│   │   │   └── 📄 static.js
+│   │   ├── 📄 app.js
+│   │   ├── 📄 connection.js
+│   │   ├── ⚙️ package-lock.json
+│   │   └── ⚙️ package.json
+│   ├── 📁 frontend
+│   │   ├── 📁 public
+│   │   │   ├── 🖼️ favicon.svg
+│   │   │   └── 🖼️ icons.svg
+│   │   ├── 📁 src
+│   │   │   ├── 📁 components
+│   │   │   │   ├── 📄 CreateUser.jsx
+│   │   │   │   ├── 📄 UpdateUser.jsx
+│   │   │   │   └── 📄 User.jsx
+│   │   │   ├── 🎨 App.css
+│   │   │   ├── 📄 App.jsx
+│   │   │   ├── 🎨 index.css
+│   │   │   └── 📄 main.jsx
+│   │   ├── ⚙️ .oxlintrc.json
+│   │   ├── 🌐 index.html
+│   │   ├── ⚙️ package-lock.json
+│   │   ├── ⚙️ package.json
+│   │   └── 📄 vite.config.js
+│   ├── 📝 README.md
+│   └── ⚙️ vercel.json
+└── 📝 README.md
+```
+
+---
+
 ## 👤 Author
 
 **MehmoodCoder**
