@@ -6,6 +6,12 @@ export async function HomeUI(req, res) {
     .catch((e) => res.json(e));
 }
 
+export async function CreateNewUser(req, res) {
+    UserModel.create(req.body)
+    .then(user => res.json(user))
+    .catch(e => res.json(e))
+}
+
 export async function GetUser(req, res) {
   const id = req.params?.id;
   UserModel.findById(id)
