@@ -23,3 +23,12 @@ export async function UpdateUser(req, res) {
     .then((users) => res.json(users))
     .catch((e) => res.json(`Error :`, e));
 }
+
+export async function DeleteUser(req, res) {
+  const id = req.params?.id;
+  UserModel.findByIdAndDelete(id)
+    .then((users) => {
+      res.json(users);
+    })
+    .catch((e) => res.json("Error : ", e));
+}
