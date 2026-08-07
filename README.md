@@ -44,6 +44,24 @@ A complete full-stack web application designed to manage user records in real-ti
 
 ---
 
+## 📂 Project Directory Structure
+
+
+**Generated:** 8/7/2026, 4:55:19 PM
+**Root Path:** `workspace\MERN_Projects`
+
+```text
+📁 MERN_Projects
+├── 📂 CRUD_Project
+│   ├── ⚡ backend
+│   └── 💻 frontend
+├── 📄 LICENSE
+├── 🙈 .gitignore
+└── 📝 README.md
+```
+
+---
+
 # 📦 MERN Stack: Frontend Architecture Setup Guide
 
 This documentation provides a step-by-step guide to setting up a production-ready **Frontend Workspace** for a MERN stack application using **React + Vite**. It covers project initialization, dependency configuration, and local setup—preparing the UI layer to seamlessly connect with an Express/Node.js backend.
