@@ -7,16 +7,16 @@ import ConnectDB from "./connection.js";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT: number = Number(process.env.PORT) || 3000;
 
 app.use(cors());
 app.use(express.json());
 
-ConnectDB(process.env.MONGO_URL)
+ConnectDB(process.env.MONGO_URL as string)
   .then(() => {
     console.log("Database Connected Successfully");
   })
-  .catch((error) => {
+  .catch((error: unknown) => {
     console.error("Database connection failure:", error);
   });
 
