@@ -4,6 +4,15 @@ import { HomeUI, CreateNewUser, GetUser, UpdateUser, DeleteUser } from "../contr
 
 const router = express.Router()
 
+function requireAuth(req: express.Request, res: express.Response, next: express.NextFunction) {
+  const authHeader = req.headers['authorization']
+  if (!process.env.API_KEY || authHeader !== `Bearer ${process.env.API_KEY}`) {
+    return res.status(401).json({ message: 'Unauthorized' })
+  }
+  next()
+}
+
+router.use(requireAuth)
 
 router.get('/', HomeUI)
 router.post('/create', CreateNewUser);
