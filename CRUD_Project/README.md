@@ -1,24 +1,24 @@
-# MERN Stack CRUD Application
+# MERN Stack CRUD Application (TypeScript)
 
-A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application designed for complete user management (Create, Read, Update, Delete) with real-time UI synchronization and production-ready serverless deployment on Vercel.
+A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application migrated to **TypeScript** with strict type safety, modern ESM module resolution, and production-ready serverless deployment on Vercel. Designed for complete user management (Create, Read, Update, Delete) with real-time UI synchronization.
 
 ---
 
 ## 🚀 Features
 
-* **Create User:** Add new users with input validation (Name, Email, Age).
-* **Read Users:** Fetch and display all stored records from MongoDB Atlas instantly.
-* **Update User:** Pre-populate existing user data into form fields for inline modification.
+* **Create User:** Add new users with strict type validation and error handling (Name, Email, Age).
+* **Read Users:** Fetch and display all stored records from MongoDB Atlas instantly with robust array safety checks.
+* **Update User:** Pre-populate existing user data into fully typed form fields for inline modification.
 * **Delete User:** Remove records dynamically and trigger real-time UI re-rendering.
-* **Responsive UI:** Dark-themed responsive layout built with Bootstrap 5.
+* **Responsive UI:** Dark-themed responsive layout built with Bootstrap 5 and custom component styling.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Architecture
 
-* **Frontend:** React.js, React Router DOM, Axios, Bootstrap 5
-* **Backend:** Node.js, Express.js, CORS, Dotenv, Nodemon
-* **Database:** MongoDB Atlas (Mongoose ODM)
+* **Frontend:** React, TypeScript (`.tsx`), React Router DOM, Axios, Bootstrap 5, Vite (with optimized ESM build pipeline)
+* **Backend:** Node.js, Express, TypeScript (`.ts`), `tsx` (for modern ESM development runtime), Mongoose ODM, Dotenv, CORS
+* **Database:** MongoDB Atlas
 * **Deployment:** Vercel (Frontend & Serverless Functions)
 * **Version Control:** Git, GitHub
 
