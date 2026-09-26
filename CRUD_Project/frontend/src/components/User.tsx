@@ -15,7 +15,13 @@ function User() {
   useEffect(() => {
     axios
       .get("/api")
-      .then((result) => setusers(result.data))
+      .then((result) => {
+        if (Array.isArray(result.data)) {
+          setusers(result.data);
+        } else {
+          setusers([]);
+        }
+      })
       .catch((e: unknown) => console.log("error : ", e));
   }, []);
 
