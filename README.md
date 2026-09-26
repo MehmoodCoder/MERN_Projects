@@ -172,6 +172,13 @@ cd Project_dir
 # create node_modules folder by running this command  
 npm i
 
+# Install TypeScript Globally
+npm i -g typescript 
+
+
+# create dist folder by running this command
+tsc
+
 # Start the local development server
 npm run dev
 ```
