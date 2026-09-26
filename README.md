@@ -77,6 +77,7 @@ A full-stack user management module built on the MERN stack and migrated to **Ty
 📁 MERN_Projects
 ├── 📂 CRUD_Project
 │   ├── 📄 vercel.json
+│   ├── 📝 README.md
 │   ├── ⚡ backend
 │   └── 💻 frontend
 ├── 📄 LICENSE
