@@ -68,36 +68,42 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application desig
 ├── 📁 CRUD_Project
 │   ├── 📁 backend
 │   │   ├── 📁 controllers
-│   │   │   └── 📄 static.js
+│   │   │   └── 📄 static.ts
 │   │   ├── 📁 models
-│   │   │   └── 📄 user.js
+│   │   │   └── 📄 user.ts
 │   │   ├── 📁 routes
-│   │   │   └── 📄 static.js
-│   │   ├── 📄 app.js
-│   │   ├── 📄 connection.js
+│   │   │   └── 📄 static.ts
+│   │   ├── 📄 app.ts
+│   │   ├── 📄 connection.ts
 │   │   ├── ⚙️ package-lock.json
-│   │   └── ⚙️ package.json
+│   │   ├── ⚙️ package.json
+│   │   └── ⚙️ tsconfig.json
 │   ├── 📁 frontend
 │   │   ├── 📁 public
 │   │   │   ├── 🖼️ favicon.svg
 │   │   │   └── 🖼️ icons.svg
 │   │   ├── 📁 src
 │   │   │   ├── 📁 components
-│   │   │   │   ├── 📄 CreateUser.jsx
-│   │   │   │   ├── 📄 UpdateUser.jsx
-│   │   │   │   └── 📄 User.jsx
+│   │   │   │   ├── 📄 CreateUser.tsx
+│   │   │   │   ├── 📄 UpdateUser.tsx
+│   │   │   │   └── 📄 User.tsx
 │   │   │   ├── 🎨 App.css
-│   │   │   ├── 📄 App.jsx
+│   │   │   ├── 📄 App.tsx
 │   │   │   ├── 🎨 index.css
-│   │   │   └── 📄 main.jsx
+│   │   │   ├── 📄 main.tsx
+│   │   │   └── 📄 vite-env.d.ts
 │   │   ├── ⚙️ .oxlintrc.json
 │   │   ├── 🌐 index.html
 │   │   ├── ⚙️ package-lock.json
 │   │   ├── ⚙️ package.json
+│   │   ├── ⚙️ tsconfig.json
 │   │   └── 📄 vite.config.js
 │   ├── 📝 README.md
 │   └── ⚙️ vercel.json
+├── ⚙️ .gitignore
+├── 📄 LICENSE
 └── 📝 README.md
+
 ```
 
 ---
