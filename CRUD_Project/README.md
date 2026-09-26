@@ -1,6 +1,6 @@
-# MERN Stack CRUD Application (TypeScript)
+# 💻 MERN Stack CRUD Application (TypeScript) 🚀
 
-A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application migrated to **TypeScript** with strict type safety, modern ESM module resolution, and production-ready serverless deployment on Vercel. Designed for complete user management (Create, Read, Update, Delete) with real-time UI synchronization.
+A full-stack MERN (MongoDB 🍃, Express.js 🚂, React.js ⚛️, Node.js 🟢) web application migrated to **TypeScript** 📘 with strict type safety 🔒, modern ESM module resolution 📦, and production-ready serverless deployment on Vercel ☁️. Designed for complete user management (Create, Read, Update, Delete) 👥 with real-time UI synchronization ⚡.
 
 ---
 
