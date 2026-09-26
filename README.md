@@ -291,6 +291,9 @@ cd Project_dir
 # create node_modules folder by running this command  
 npm i
 
+# create dist folder by running this command
+tsc
+
 # Start the local development server
 npm run dev
 ```
