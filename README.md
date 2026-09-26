@@ -29,19 +29,19 @@ This workspace continuously expands to include diverse full-stack solutions and 
 
 ## 💻 Projects Included
 
-### 👥 MERN CRUD User Management System
+### 👥 MERN CRUD User Management System (TypeScript)
 > **Main Folder:** `CRUD_Project/`
->> **Subfolders:** `backend/` (Node/Express API) & `frontend/` (React SPA)
+>> **Subfolders:** `backend/` (Node/Express/TypeScript REST API) & `frontend/` (React/TypeScript SPA)
 
-A full-stack user management module built on the MERN stack, offering dynamic record operations, MongoDB Atlas persistence, and instant UI state synchronization.
+A full-stack user management module built on the MERN stack and migrated to **TypeScript** with strict type safety, offering dynamic record operations, MongoDB Atlas persistence, and instant UI state synchronization.
 
 - **Features:**
-  - Fetch and render all stored user records on the main dashboard (`GET /api`).
-  - Add new user entries via form inputs with built-in validation (`POST /api/create`).
+  - Fetch and render all stored user records on the main dashboard (`GET /api`) with robust array safety checks.
+  - Add new user entries via form inputs with strict type validation (`POST /api/create`).
   - Pre-populate dynamic user data for inline profile modifications (`GET /api/getuser/:id` & `PUT /api/update/:id`).
   - Delete user entries instantly with direct MongoDB sync and state re-rendering (`DELETE /api/delete/:id`).
-  - Serverless architecture support with configured route rewrites for cloud deployments (`vercel.json`).
-- **Concepts:** Modular Express Routing, Mongoose Schema Modeling, Axios relative paths, React Hooks (`useState`, `useEffect`, `useParams`, `useNavigate`), Client-side Routing (`react-router-dom`), Bootstrap 5 Layouts.
+  - Serverless architecture support with configured route rewrites for cloud deployments (`vercel.json`) and optimized Vite builds.
+- **Concepts:** Full-stack TypeScript architecture (`.ts`, `.tsx`, `IUser`), strict type checking (`noImplicitAny`), modular Express routing, Mongoose schema modeling, Axios relative paths, React Hooks (`useState`, `useEffect`, `useParams`, `useNavigate`), client-side routing (`react-router-dom`), Bootstrap 5 layouts, and modern ESM runtime execution via `tsx`.
 
 ---
 
@@ -49,15 +49,16 @@ A full-stack user management module built on the MERN stack, offering dynamic re
 
 | Tool / Library | Type | Purpose |
 | :--- | :--- | :--- |
-| **Node.js** | Runtime | Server-side JavaScript execution environment |
+| **TypeScript** | Language / Superset | Adds static typing, robust interfaces, and error prevention across frontend and backend |
+| **Node.js** | Runtime | Server-side JavaScript/TypeScript execution environment |
 | **Express.js** | Backend Framework | Web framework for handling RESTful API routes & HTTP requests |
-| **React.js** | Frontend Library | Declarative UI library for building component-based client views |
+| **React.js** | Frontend Library | Declarative UI library for building component-based client views (`.tsx`) |
 | **MongoDB Atlas** | Database | Cloud-hosted NoSQL document database for user data storage |
 | **Mongoose** | Backend ODM | Schema-based data modeling and async queries for MongoDB |
 | **Axios** | Frontend HTTP Client | Promise-based client for sending HTTP requests to backend endpoints |
 | **React Router DOM** | Client Routing | Declarative routing for single-page dynamic view navigation |
 | **Bootstrap 5** | Frontend Styling | Responsive component layout, tables, forms, and dark-theme views |
-| **Vite** | Frontend Tooling | High-performance build tool and hot-reloading dev server |
+| **Vite** | Frontend Tooling | High-performance build tool and optimized ESM bundling pipeline |
 | **Nodemon** | Dev Dependency | Automatically restarts Node app when server-side file changes occur |
 | **dotenv** | Utility | Loads environment variables from `.env` file into `process.env` |
 | **CORS** | Backend Middleware | Enables cross-origin resource sharing between React and Express |
