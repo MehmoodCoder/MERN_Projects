@@ -2,24 +2,31 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+interface IUser {
+  _id: string;
+  name: string;
+  email: string;
+  age: number;
+}
+
 function User() {
-  const [users, setusers] = useState([]);
+  const [users, setusers] = useState<IUser[]>([]);
 
   useEffect(() => {
     axios
       .get("/api")
       .then((result) => setusers(result.data))
-      .catch((e) => console.log("error : ", e));
+      .catch((e: unknown) => console.log("error : ", e));
   }, []);
 
-  const handleDelete = (id) => {
+  const handleDelete = (id: string) => {
     axios
       .delete(`/api/delete/${id}`)
       .then((res) => {
         console.log(res.data);
         setusers(users.filter((user) => user._id !== id));
       })
-      .catch((err) => console.log("Error : ", err));
+      .catch((err: unknown) => console.log("Error : ", err));
   };
 
   return (
