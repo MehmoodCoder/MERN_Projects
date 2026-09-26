@@ -402,12 +402,25 @@ npm i -D tsx
 
 ---
 
-## 📚 Learning Resources
+## 📚 Learning Resources & Documentation
 
-- [React Documentation](https://react.dev)
-- [Vite Guide](https://vitejs.dev)
-- [Bootstrap Documentation](https://getbootstrap.com)
-- [W3Schools All Language Tutorials](https://www.w3schools.com) — *(Comprehensive tutorials & references for JavaScript, BootStrap, CSS, Node, React, and more)*
+- **Frontend & UI:**
+  - [React Documentation](https://react.dev) – Official guide for building component-based UIs and hooks.
+  - [React Router Documentation](https://reactrouter.com) – Learn client-side routing, dynamic navigation, and parameter handling.
+  - [Vite Guide](https://vitejs.dev) – Documentation for high-performance frontend tooling and bundling.
+  - [Bootstrap 5 Documentation](https://getbootstrap.com) – Reference for responsive grid layouts, styling, and dark-theme classes.
+
+- **Backend & Database:**
+  - [Node.js Official Docs](https://nodejs.org/docs) – Core runtime environment and server-side JavaScript APIs.
+  - [Express.js Guide](https://expressjs.com) – Framework guide for building RESTful APIs and middleware pipelines.
+  - [Mongoose ODM Docs](https://mongoosejs.com) – Schema modeling, data validation, and MongoDB query execution.
+  - [MongoDB Atlas Documentation](https://www.mongodb.com/docs/atlas/) – Cloud database setup, clusters, and security configuration.
+
+- **Language & Utilities:**
+  - [TypeScript Documentation](https://www.typescriptlang.org/docs/) – Comprehensive guide to static typing, interfaces, and compiler configurations.
+  - [Axios HTTP Client](https://axios-http.com/docs/intro) – Promise-based HTTP requests for browser and Node environments.
+  - [W3Schools All Language Tutorials](https://www.w3schools.com) – Comprehensive tutorials and quick reference guides for JavaScript, TypeScript, Node, React, CSS, and Bootstrap.
+  - [MDN Web Docs (Mozilla)](https://developer.mozilla.org) – In-depth reference for JavaScript, HTML, CSS, and web APIs.
 
 ---
 
