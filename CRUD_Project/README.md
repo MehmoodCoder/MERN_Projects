@@ -26,15 +26,16 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application migra
 
 ## ✨ Features
 
-- 🏗️ **Full-Stack MERN Architecture** – Seamless integration connecting a React client to a Node.js & Express REST API server.
+- 🏗️ **Full-Stack TypeScript Architecture** – Seamless integration connecting a strongly typed React client (`.tsx`) to a Node.js & Express REST API server (`.ts`).
+- 🔒 **Strict Type Safety** – Comprehensive type definitions (`IUser`, component props) and strict configuration (`noImplicitAny`) across the entire stack.
 - ⚡ **Axios API Integration** – Clean client-side HTTP requests utilizing relative paths for real-time frontend-backend communication.
-- 🔄 **Real-Time CRUD Operations** – Instant UI updates and state re-rendering on User Creation, Retrieval, Updates, and Deletions.
+- 🔄 **Real-Time CRUD Operations** – Instant UI updates and state re-rendering on User Creation, Retrieval, Updates, and Deletions with robust array safety checks.
 - 🗄️ **MongoDB & Mongoose Validation** – Structured database schemas, data validation, and persistent cloud storage using MongoDB Atlas.
 - 🌐 **Dynamic Client-Side Routing** – Multi-page navigation managed via React Router for viewing, adding, and updating users.
 - 🎨 **Responsive UI Layer** – Dynamic, modern dark-themed views and responsive form interfaces styled with Bootstrap 5.
-- 🚀 **Serverless Production Deployment** – Production-ready setup with custom `vercel.json` rewrite rules and serverless function routing.
+- 🚀 **Serverless Production Deployment** – Production-ready setup with custom `vercel.json` rewrite rules and optimized Vite build pipelines.
 - ⚙️ **Centralized Environment Vault** – Secure management of sensitive configurations (`MONGO_URL`, `PORT`) via `.env` integration.
-- ⚡ **Developer Workflow** – Accelerated development loop using Vite on the frontend and hot-reloading tooling on the backend.
+- ⚡ **Modern Developer Workflow** – Accelerated development loop using Vite on the frontend and `tsx` hot-reloading runtime on the backend.
 
 ---
 
@@ -42,15 +43,17 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application migra
 
 | Tool / Library | Type | Purpose |
 | :--- | :--- | :--- |
-| **Node.js** | Runtime | Server-side JavaScript execution environment |
+| **TypeScript** | Language / Superset | Adds static typing and robust error prevention across frontend and backend |
+| **Node.js** | Runtime | Server-side JavaScript/TypeScript execution environment |
 | **Express.js** | Backend Framework | Web framework for handling RESTful API routes & HTTP requests |
-| **React.js** | Frontend Library | Declarative UI library for building component-based client views |
+| **React.js** | Frontend Library | Declarative UI library for building component-based client views (`.tsx`) |
 | **MongoDB Atlas** | Database | Cloud-hosted NoSQL document database for user data storage |
 | **Mongoose** | Backend ODM | Schema-based data modeling and async queries for MongoDB |
 | **Axios** | Frontend HTTP Client | Promise-based client for sending HTTP requests to backend endpoints |
 | **React Router DOM** | Client Routing | Declarative routing for single-page dynamic view navigation |
 | **Bootstrap 5** | Frontend Styling | Responsive component layout, tables, forms, and dark-theme views |
-| **Vite** | Frontend Tooling | High-performance build tool and hot-reloading dev server |
+| **Vite** | Frontend Tooling | High-performance build tool and optimized ESM bundling pipeline |
+| **tsx** | Dev Runtime | Modern TypeScript execution and hot-reloading tool for ESM Node.js |
 | **Nodemon** | Dev Dependency | Automatically restarts Node app when server-side file changes occur |
 | **dotenv** | Utility | Loads environment variables from `.env` file into `process.env` |
 | **CORS** | Backend Middleware | Enables cross-origin resource sharing between React and Express |
