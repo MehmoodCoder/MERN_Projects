@@ -12,9 +12,10 @@
   "license": "MIT",
   "author": "MehmoodCoder",
   "type": "module",
-  "main": "app.js",
+  "main": "app.ts",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.ts",
+    "dev": "nodemon app.ts"
   },
   "dependencies": {
     "@types/cors": "^2.8.19",
