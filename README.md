@@ -297,7 +297,7 @@ cd Project_dir
 npm i
 
 # Start the local development server
-npm start
+npm run dev
 ```
 
 ---
@@ -336,6 +336,11 @@ npm i mongoose
 npm i nodemon
 npm i cors
 npm i dotenv
+npm i @types/cors
+npm i @types/express
+npm i @types/node
+npm i typescript
+npm i -D tsx
 ```
 
 **It automatically Create package.json if not exists. Like**
@@ -359,16 +364,24 @@ npm i dotenv
   "license": "MIT",
   "author": "Author",
   "type": "module",
-  "main": "app.js",
+  "main": "dist/app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node dist/app.js",
+    "dev": "nodemon --exec tsx app.ts"
   },
   "dependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.2",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.9.1",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0"
   }
 }
 
