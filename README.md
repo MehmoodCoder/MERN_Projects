@@ -426,6 +426,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 Changelog
 
+### v1.1.0 (TypeScript & ESM Migration)
+- 🔒 **Full TypeScript Migration:** Converted both backend (`app.ts`, models, controllers) and frontend (`.tsx` components, strict types, `IUser` models) to TypeScript with strict type checking enabled (`noImplicitAny`).
+- ⚡ **Modern ESM & Build Pipeline:** Upgraded backend runtime to use `tsx` with modern ES Modules (`type: "module"`), and verified Vite build processes with clean production bundle output.
+- 🛡️ **Robust State Safety & Error Handling:** Implemented type-safe safety checks for API responses and error flows to prevent runtime rendering crashes.
+
 ### v1.0.0 (Initial Release)
 - ✨ **Full-Stack MERN Architecture:** Initialized central hub structure for integrated frontend client and backend REST API services.
 - 🎨 **Responsive UI Layer:** Integrated dynamic dark theme views, table-to-card mobile responsive views, and Bootstrap UI enhancements.
