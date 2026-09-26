@@ -389,6 +389,119 @@ npm i -D tsx
 
 ---
 
+## ⚙️ Setup of TypeScript
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+cd Main_folder/Project_Folder
+```
+
+### 2. Global TypeScript Installation
+
+Install TypeScript globally on your system to use `tsc` commands directly:
+
+```bash
+npm install -g typescript
+```
+
+### 3. Install Dependencies
+
+TypeScript is already listed as a project dependency. Install it locally with:
+
+```bash
+npm install
+```
+
+Or
+
+```bash
+npm i typescript
+```
+
+Using the local dependency keeps the project compiler version consistent across different machines.
+
+### 4. Initialize TypeScript Configuration
+
+Generate the `tsconfig.json` file to configure compiler settings and strict type-checking rules:
+
+```bash
+tsc --init
+```
+
+> Note: This creates a tsconfig.json file in your root folder with "strict": true enabled by default.
+
+### 5. Explore the Source File
+
+Open `src/Notes.ts` and review the examples covering the concepts listed above.
+
+---
+
+## 🧰 TypeScript Commands
+
+Run these commands from inside the `Project Folder` directory.
+
+### Compile the Project
+
+```bash
+tsc
+```
+
+This reads `tsconfig.json`, compiles TypeScript files from `src/`, and writes JavaScript, declaration, and source map files to `dist/`.
+
+### Watch for Changes
+
+```bash
+tsc --watch
+```
+
+The compiler will rebuild the project whenever a source file changes. Press `Ctrl + C` to stop watch mode.
+
+### Run the Compiled JavaScript
+
+```bash
+node dist/FileName.js
+```
+
+### Run Compiled Code
+
+```bash
+node dist/FileName.js
+```
+
+### Type-Check Without Emitting Files
+
+```bash
+tsc --noEmit
+```
+
+This checks the project for type errors without creating or changing files in `dist/`.
+
+---
+
+## ⚡ Optional: Convenient npm Scripts
+
+You can add these shortcut scripts to your package.json file:
+
+```json
+"scripts": {
+  "build": "tsc",
+  "watch": "tsc --watch",
+  "start": "tsc && node dist/Notes.js",
+  "check": "tsc --noEmit"
+}
+```
+
+Now you can run:
+
+* `npm run build` to compile
+* `npm run watch` for auto-rebuild
+* `npm start` to compile and run in one step
+* `npm run check` for quick type checks
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
