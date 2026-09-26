@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -9,10 +9,8 @@ function CreateUser() {
 
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // ❌ Pehle: axios.post("http://localhost:3000/create", ...)
-    // ✅ Updated: Relative path with /api
     axios
       .post("/api/create", {
         name,
@@ -23,7 +21,7 @@ function CreateUser() {
         console.log(result);
         navigate("/");
       })
-      .catch((e) => console.log("Error : ", e));
+      .catch((e: unknown) => console.log("Error : ", e));
   };
 
   return (
