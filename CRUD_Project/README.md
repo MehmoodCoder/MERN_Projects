@@ -146,12 +146,17 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 Changelog
 
+### v1.1.0 (TypeScript & ESM Migration)
+- 🔒 **Full TypeScript Migration:** Converted both backend (`app.ts`, models, controllers) and frontend (`.tsx` components, strict types, `IUser` models) to TypeScript with strict type checking enabled (`noImplicitAny`).
+- ⚡ **Modern ESM & Build Pipeline:** Upgraded backend runtime to use `tsx` with modern ES Modules (`type: "module"`), and verified Vite build processes with clean production bundle output.
+- 🛡️ **Robust State Safety & Error Handling:** Implemented type-safe safety checks for API responses and error flows to prevent runtime rendering crashes.
+
 ### v1.0.0 (Initial Release)
-- ✨ **Full-Stack MERN Integration:** Connected React frontend with Express/Node.js backend and MongoDB Atlas using Mongoose ODM.
-- ⚡ **Axios API Integration:** Configured Axios relative routing (`/api`) across all React components (`User`, `CreateUser`, `UpdateUser`) for seamless client-server interaction.
-- 🔄 **Real-time CRUD Synchronization:** Implemented dynamic state updates on Create, Read, Update, and Delete operations to re-render UI instantly.
-- 🛠️ **Serverless Deployment Setup:** Configured `vercel.json` rewrite rules and exported Express server instance as serverless functions for production deployment.
-- 🎨 **Responsive UI Layer:** Designed clean, dark-themed responsive table and form layouts utilizing Bootstrap 
+- ✨ **Full-Stack MERN Architecture:** Initialized central hub structure for integrated frontend client and backend REST API services.
+- 🎨 **Responsive UI Layer:** Integrated dynamic dark theme views, table-to-card mobile responsive views, and Bootstrap UI enhancements.
+- ⚙️ **CRUD Systems & Routing:** Configured React client routing for seamless navigation across User creation, update, and management states.
+- 🛡️ **Form Handling & Validation:** Built interactive forms with explicit input validation and dynamic data binding.
+- 🚀 **Production-Ready Baseline:** Configured build scripts and baseline project setup protocols for scalable feature expansions.
 
 ---
 
