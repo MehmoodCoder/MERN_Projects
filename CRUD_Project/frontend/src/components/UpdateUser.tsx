@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 function UpdateUser() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
   const [name, setName] = useState("");
@@ -18,10 +18,10 @@ function UpdateUser() {
         setEmail(result.data.email);
         setAge(result.data.age);
       })
-      .catch((e) => console.log("Error fetching user: ", e));
+      .catch((e: unknown) => console.log("Error fetching user: ", e));
   }, [id]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     axios
       .put(`/api/update/${id}`, { name, email, age })
@@ -29,7 +29,7 @@ function UpdateUser() {
         console.log(result);
         navigate("/");
       })
-      .catch((e) => console.log("Error updating user: ", e));
+      .catch((e: unknown) => console.log("Error updating user: ", e));
   };
 
   return (
