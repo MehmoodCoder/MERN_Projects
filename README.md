@@ -35,6 +35,8 @@ This workspace continuously expands to include diverse full-stack solutions and 
 
 A full-stack user management module built on the MERN stack and migrated to **TypeScript** with strict type safety, offering dynamic record operations, MongoDB Atlas persistence, and instant UI state synchronization.
 
+**Live App 🔗** : [https://mh56-crud-project.vercel.app/](https://mh56-crud-project.vercel.app/)
+
 - **Features:**
   - Fetch and render all stored user records on the main dashboard (`GET /api`) with robust array safety checks.
   - Add new user entries via form inputs with strict type validation (`POST /api/create`).
