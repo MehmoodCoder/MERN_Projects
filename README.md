@@ -221,13 +221,14 @@ npm i bootstrap
     "react-router-dom": "^7.18.2"
   },
   "devDependencies": {
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.0.4",
     "oxlint": "^1.75.0",
     "vite": "^8.2.0"
   }
 }
+
 ```
 
 **Note:**  Install packages when needed
